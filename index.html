@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Focus Egg - プライバシーポリシー</title>
+  <title>Focus Egg - Privacy Policy</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
@@ -18,40 +18,114 @@
     h2 { font-size: 17px; margin-top: 36px; }
     a { color: #007aff; }
     p { margin: 8px 0; }
+    .lang-btn {
+      display: inline-block;
+      margin-right: 12px;
+      padding: 6px 16px;
+      border-radius: 20px;
+      border: 1px solid #007aff;
+      color: #007aff;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .lang-btn.active {
+      background: #007aff;
+      color: #fff;
+    }
+    .lang-switch { margin-bottom: 32px; }
+    .section-en { display: none; }
   </style>
 </head>
 <body>
 
-  <h1>🥚 Focus Egg</h1>
-  <p>プライバシーポリシー</p>
+  <div class="lang-switch">
+    <a class="lang-btn active" id="btn-ja" href="#" onclick="showJa(); return false;">日本語</a>
+    <a class="lang-btn" id="btn-en" href="#" onclick="showEn(); return false;">English</a>
+  </div>
 
-  <h2>1. はじめに</h2>
-  <p>「Focus Egg」（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めています。本プライバシーポリシーは、本アプリにおける情報の取り扱いについて説明するものです。</p>
+  <!-- 日本語 -->
+  <div class="section-ja">
+    <h1>🥚 Focus Egg</h1>
+    <p>プライバシーポリシー</p>
 
-  <h2>2. 収集する情報</h2>
-  <p>本アプリは、ユーザーの個人情報（氏名、メールアドレス、電話番号等）を直接収集することはありません。</p>
-  <p>Googleアカウントでログインされた場合、Firebase Authentication によりGoogleアカウントに紐づく認証情報が管理されます。</p>
+    <h2>1. はじめに</h2>
+    <p>「Focus Egg」（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めています。本プライバシーポリシーは、本アプリにおける情報の取り扱いについて説明するものです。</p>
 
-  <h2>3. 広告について</h2>
-  <p>本アプリでは、Google AdMob による広告を表示しています。Google AdMob は、広告配信のためにデバイスの広告識別子（IDFA）やCookieなどの情報を使用する場合があります。これらの情報はGoogleのプライバシーポリシーに基づいて収集・使用されます。</p>
-  <p>詳しくは <a href="https://policies.google.com/privacy" target="_blank">Google プライバシーポリシー</a> をご確認ください。</p>
+    <h2>2. 収集する情報</h2>
+    <p>本アプリは、ユーザーの個人情報（氏名、メールアドレス、電話番号等）を直接収集することはありません。</p>
+    <p>Googleアカウントでログインされた場合、Firebase Authentication によりGoogleアカウントに紐づく認証情報が管理されます。</p>
 
-  <h2>4. データの保存</h2>
-  <p>本アプリでは、集中セッションの記録やモンスターコレクションなどのデータを、Google Firebase（Firestore）のサーバーに保存します。これにより、機種変更後もデータを引き継ぐことができます。これらのデータはGoogleのプライバシーポリシーに基づいて管理されます。</p>
-  <p>詳しくは <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase プライバシーポリシー</a> をご確認ください。</p>
+    <h2>3. 広告について</h2>
+    <p>本アプリでは、Google AdMob による広告を表示しています。Google AdMob は、広告配信のためにデバイスの広告識別子（IDFA）やCookieなどの情報を使用する場合があります。これらの情報はGoogleのプライバシーポリシーに基づいて収集・使用されます。</p>
+    <p>詳しくは <a href="https://policies.google.com/privacy" target="_blank">Google プライバシーポリシー</a> をご確認ください。</p>
 
-  <h2>5. 第三者への情報提供</h2>
-  <p>本アプリは、前項に記載した広告サービス（Google AdMob）およびデータ管理サービス（Google Firebase）を除き、ユーザーの情報を第三者に提供することはありません。</p>
+    <h2>4. データの保存</h2>
+    <p>本アプリでは、集中セッションの記録やモンスターコレクションなどのデータを、Google Firebase（Firestore）のサーバーに保存します。これにより、機種変更後もデータを引き継ぐことができます。これらのデータはGoogleのプライバシーポリシーに基づいて管理されます。</p>
+    <p>詳しくは <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase プライバシーポリシー</a> をご確認ください。</p>
 
-  <h2>6. お子様のプライバシー</h2>
-  <p>本アプリは、13歳未満のお子様を対象としたものではありません。13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
+    <h2>5. 第三者への情報提供</h2>
+    <p>本アプリは、前項に記載した広告サービス（Google AdMob）およびデータ管理サービス（Google Firebase）を除き、ユーザーの情報を第三者に提供することはありません。</p>
 
-  <h2>7. プライバシーポリシーの変更</h2>
-  <p>本プライバシーポリシーは、必要に応じて変更されることがあります。変更があった場合は、本ページにて通知いたします。</p>
+    <h2>6. お子様のプライバシー</h2>
+    <p>本アプリは、13歳未満のお子様を対象としたものではありません。13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
 
-  <h2>8. お問い合わせ</h2>
-  <p>本プライバシーポリシーに関するお問い合わせは、以下までご連絡ください。</p>
-  <p>メール: <a href="mailto:nocoding.kintore@gmail.com">nocoding.kintore@gmail.com</a></p>
+    <h2>7. プライバシーポリシーの変更</h2>
+    <p>本プライバシーポリシーは、必要に応じて変更されることがあります。変更があった場合は、本ページにて通知いたします。</p>
+
+    <h2>8. お問い合わせ</h2>
+    <p>本プライバシーポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+    <p>メール: <a href="mailto:nocoding.kintore@gmail.com">nocoding.kintore@gmail.com</a></p>
+  </div>
+
+  <!-- English -->
+  <div class="section-en">
+    <h1>🥚 Focus Egg</h1>
+    <p>Privacy Policy</p>
+
+    <h2>1. Introduction</h2>
+    <p>"Focus Egg" (the "App") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how information is handled in the App.</p>
+
+    <h2>2. Information We Collect</h2>
+    <p>The App does not directly collect personal information such as your name, email address, or phone number.</p>
+    <p>If you choose to sign in with a Google account, authentication information linked to your Google account is managed through Firebase Authentication.</p>
+
+    <h2>3. Advertising</h2>
+    <p>The App displays advertisements provided by Google AdMob. Google AdMob may use your device's advertising identifier (IDFA) and cookies to serve ads. This information is collected and used in accordance with Google's Privacy Policy.</p>
+    <p>For more details, please see the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</p>
+
+    <h2>4. Data Storage</h2>
+    <p>The App stores data such as focus session records and your monster collection on Google Firebase (Firestore) servers. This allows your data to be restored if you change devices. This data is managed in accordance with Google's Privacy Policy.</p>
+    <p>For more details, please see the <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>.</p>
+
+    <h2>5. Sharing with Third Parties</h2>
+    <p>The App does not share your information with third parties, except for the advertising service (Google AdMob) and data management service (Google Firebase) described above.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>The App is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>This Privacy Policy may be updated from time to time. Any changes will be posted on this page.</p>
+
+    <h2>8. Contact</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+    <p>Email: <a href="mailto:nocoding.kintore@gmail.com">nocoding.kintore@gmail.com</a></p>
+  </div>
+
+  <script>
+    function showJa() {
+      document.querySelector('.section-ja').style.display = 'block';
+      document.querySelector('.section-en').style.display = 'none';
+      document.getElementById('btn-ja').classList.add('active');
+      document.getElementById('btn-en').classList.remove('active');
+    }
+    function showEn() {
+      document.querySelector('.section-ja').style.display = 'none';
+      document.querySelector('.section-en').style.display = 'block';
+      document.getElementById('btn-ja').classList.remove('active');
+      document.getElementById('btn-en').classList.add('active');
+    }
+  </script>
 
 </body>
 </html>
